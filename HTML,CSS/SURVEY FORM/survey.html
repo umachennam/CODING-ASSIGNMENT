@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2 class="title">Survey Form</h2>
+    <div class="container">
+        
+        <form>
+            <div class="flex1" >
+
+                <div style="display: flex;flex-direction: column;">
+                    <label> First Name: </label>
+                    <input id="firstname" type="text" required>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <label> Last Name: </label>
+                    <input id="lastname" type="text" required>
+                </div>
+                
+             </div> 
+             <div class="flex1">
+                <div style="display: flex;flex-direction: column;">
+                    <label> Mobile Number </label>
+                    <input id="mobile" type="tel" required>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <label> Email Id: </label>
+                    <input id="email" type="email" required>
+                    <br>
+                </div>
+            </div>
+
+<!-- //******************************************** -->
+                <div class="flex1"  style="flex-direction: column;">
+
+                    <div class="flex2" style="display: flex;margin-left:55px ;">
+                        <label> Gender
+                        <input id="male" name="gender" type="radio" value="Male">Male
+                        <input id="female" name="gender" type="radio" value="Female">Female
+                        </label>
+                        
+                    </div>
+                    <div class="flex2" style=" flex-direction: row;margin-left:55px ;">
+                        <label> Country </label>
+                        <select name="Country" id="country" >
+                            <option value="India">India</option>
+                            <option value="UK">UK</option>
+                            <option value="USA">USA</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="US">US</option>
+                            <option value="South africa">South africa</option>
+                            <option value="Netherlands">China</option>
+
+                        </select>
+                       
+                    </div>
+                    <div style="margin-left: 55px;">
+                        <label>Profession: <input type="text" id="Profession" required></label>
+                    </div>
+                    
+                 </div> 
+                
+                
+            
+                <div class="buttons" style="display: flex;margin-top: 10px;justify-content: center;">
+                    <input id="submit" type="submit" value="Submit">
+                    <button>Reset</button>
+                </div>
+
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
